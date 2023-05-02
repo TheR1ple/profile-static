@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+#konten {
+    /*float: left;
+    width: 75%;*/
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+* {
+    box-sizing: border-box;
+  }
+body {
+    font-family: 'Poppins', sans-serif;
+    margin:auto;
+    padding:0;
+ }
+ main{
+    padding: 20px;
+    background-color:#F0ECCF ;
+    /*overflow: auto;*/
+    display: flex;
+    gap: 1.5rem;
+ }
+ header {
+    display: inline;
+ }
+ nav{
+    background-color:#FBC252;
+    padding: 5px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+ }
+ nav ul{
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+ }
+ nav li{
+    list-style-type: none;
+ }
+ nav a{
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color:#F0ECCF;
+ }
+ nav a:hover, .dropbtn:hover{
+    text-decoration: none;
+    font-weight: bold;
+ }
+ h1{
+    text-align: center;
+    font-size:50px;
+    color:#F0ECCF;
+ }
+ h2 {
+    color:#F0ECCF;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+ }
+ h3{
+    color:#F0ECCF;
+    font-size: 22px;
+    font-weight: bold;
+ }
+ p, li, th, td{
+   font-size: large;
+   color:#F0ECCF;
+   font-weight: bold;
+ }
+ 
+ aside {
+    /*float: right;
+    width: 25%;
+    padding-left: 20px;*/
+    flex: 1;
+ }
+ footer {
+    padding: 20px;
+    color: white;
+    background-color: burlywood;
+    text-align: center;
+    font-weight: bold;
+ }
+ .profile header {
+    text-align: center;
+ }
+ .featured-image-header {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center;
+ }
+ .featured-image {
+    width: 100%;
+    max-height: 700px;
+    object-fit:contain;
+    object-position: center;
+    image-rendering: optimizeQuality;
+ }
+ .featured-image-cv {
+    width: 100%;
+    max-height: 1000px;
+    object-fit:scale-down;
+    object-position: center;
+ }
+ .profile img{
+    width: 200px;
+ }
+ .card {
+    box-shadow: 6px 8px 17px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 20px;
+    background-color: #A3BB98;
+ }
+ .jumbotron{
+    padding: 60px;
+    background-color:#FFB100;
+    text-align: center;
+    font-size: 20px;
+    color:black;
+ }
+ .dropdown{
+   float: left;
+   overflow: hidden;
+ }
+ .dropdown .dropbtn{
+   cursor: pointer;
+   border: none;
+   font-size: large;
+   outline: none;
+   color: #F0ECCF;
+   background-color: inherit;
+   font-family: inherit;
+   gap: 2rem;
+ }
+ .dropkonten {
+   display: none;
+   position: absolute;
+   background-color: #FBC252;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+ }
+ .dropkonten a {
+   float: none;
+   color: #F0ECCF;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+   text-align: left;
+ }
+ .dropdown-content a:hover {
+   background-color: #FFB100;
+ }
+ 
+ .show {
+   display: block;
+ }
+ 
+
+ @media screen and (max-width: 1200px) {
+    main {
+      flex-flow: column nowrap;
+    }
+    main aside {
+      align-self: center;
+    }
+  }
+ @media screen and (max-width: 1000px) {
+    #konten,
+    aside {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    nav ul {
+      justify-content: center;
+    }
+   
+    main aside {
+      align-self: stretch;
+    }
+  }
